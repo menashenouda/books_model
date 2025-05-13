@@ -142,7 +142,7 @@ def extract_book_titles(query):
     
     return validated_titles[0] if validated_titles else ""
 
-@app.route('/chat', methods=['POST'])
+@app.route('/books_chatbot', methods=['POST'])
 def chat_endpoint():
     data = request.json
     user_input = data.get('message')
